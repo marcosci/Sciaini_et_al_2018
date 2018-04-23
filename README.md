@@ -9,5 +9,5 @@ The repository contains the following files:
     - Folder containing an R script to rerun Use Case 1 in the manuscript
  - `/upscaling`
     - Folder containing an R script to rerun Use Case 2 in the manuscript
-- mee_softwareusage.csv
+- `mee_softwareusage.csv`
   - .csv containing a random subsample of Methods in Ecology and Evolution publications, that were checked for their software usage

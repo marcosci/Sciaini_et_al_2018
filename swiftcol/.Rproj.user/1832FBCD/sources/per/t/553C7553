@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521711608948.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "223458126",
+    "id" : "553C7553",
+    "lastKnownWriteTime" : 1522392733,
+    "last_content_update" : 1522392733451,
+    "path" : "C:/Users/scherer/GoogleDrive/Bio/Projects/2015_BioMove-P02/NLMR/R/nlms.R",
+    "project_path" : "R/nlms.R",
+    "properties" : {
+        "cursorPosition" : "26,38",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

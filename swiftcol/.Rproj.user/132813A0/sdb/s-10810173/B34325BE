@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "##----------------------------------------------------------------------------------------------------------##\n##  Cedric Scherer (cedricphilippscherer@gmail.com)                                                         ##\n##  Functions for running RNetLogo on a cluster                                                             ##\n##  2018-02-28                                                                                              ##\n##----------------------------------------------------------------------------------------------------------##\n\nPreSim <- function(dummy, gui, nl_path, model_path) {\n  ## Load the RNetLogo package, afterwards start NetLogo and the model on each node before starting a simulation\n  ## Args:\n  ##   gui:        if TRUE, NetLogo will be started with GUI, FALSE will start NetLogo in headless mode\n  ##   nl_path:    absolute path to NetLogo.jar\n  ##   model_path: absolute path to model.nlogo \n  library(RNetLogo)\n  NLStart(nl_path, gui = gui)\n  NLLoadModel(model_path)\n}\n\nSimWeekly <- function(row) {\n  ## Sets variables and runs the model on each node: sets fixed parameters and input variables, calls setup and runs the model\n  ## Args:\n  ##   row: vector from 1 to number of rows in 'input' (= number of parameter combinations)\n  ## Returns:\n  ##   Output variables\n  library(tidyverse)\n  ret <- tibble(Run = numeric(0), Week = numeric(0), IndSucs = numeric(0), IndTran = numeric(0), IndLeth = numeric(0), \n                IndImmu = numeric(0), NewTran = numeric(0), NewLeth = numeric(0), P_infected = numeric(0), P_infecitous = numeric(0), \n                F_infected  = numeric(0), F_infectious = numeric(0), DistInf = numeric(0), WeekMaxDistInf = numeric(0), WeekRelease = numeric(0))\n  NLCommand('set Filename', nlms[row])\n  NLCommand('setup')\n  while (as.numeric(NLReport('DONE')) == 0) {\n      NLCommand('go')\n      ret_help <- NLReport(c(row,\n                             'ticks',\n                             'count turtles with [EpiStat = \"esSusc\"]',\n                             'count turtles with [EpiStat = \"esTrans\"]',\n                             'count turtles with [EpiStat = \"esLeth\"]',\n                             'count turtles with [EpiStat = \"esImmu\"]',\n                             'NewTrans',\n                             'NewLeth',\n                             'count patches with [infected? = 1]',\n                             'count patches with [infectious? = 1]',\n                             'F_infected',\n                             'F_infectious',\n                             'InfDist',\n                             'MaxDist?',\n                             'WeekRelease'))\n      ret <- rbind(ret, ret_help)\n    }\n    names(ret) <- c(\"Run\",\n                    \"Weeks\",\n                    \"IndSusc\",\n                    \"IndTran\",\n                    \"IndLeth\",\n                    \"IndImmu\",\n                    \"NewTran\",\n                    \"NewLeth\",\n                    \"P_infected\",\n                    \"P_infectious\",\n                    \"F_infected\",\n                    \"F_infectious\",\n                    \"DistInf\",\n                    \"WeekMaxDistInf\",\n                    \"WeekRelease\")\n\n    return(ret)\n}\n\nPostSim <- function(x){\n  ## Stops NetLogo application on each node\n  NLQuit()\n}\n\nSeed <- function(s) {\n  ## Sets a unique seed on each node\n  ## Args:\n  ##   s: vector from 1 to number of created nodes\n  NLCommand('random-seed', s)\n  NLReport('random 10')\n}\n",
+    "created" : 1521196971690.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4077057869",
+    "id" : "B34325BE",
+    "lastKnownWriteTime" : 1521456993,
+    "last_content_update" : 1521457008952,
+    "path" : "M:/TEMP/NLMR/R/simulation-fun.R",
+    "project_path" : "R/simulation-fun.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

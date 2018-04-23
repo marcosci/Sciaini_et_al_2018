@@ -1,0 +1,102 @@
+Title,DOI,Software
+,,
+An open-source sensor-logger for recording vertical movement in free-living organisms,10.1111/2041-210X.12893,-
+Testing determinants of the annual individual fitness: An overall mean mixture model for de-lifing data,10.1111/2041-210X.12908,R
+A simplified mark–release–recapture protocol to improve the cost effectiveness of repeated population size quantification,10.1111/2041-210X.12900,-
+In situ measurements of animal morphological features: A non-invasive method,10.1111/2041-210X.12898,R
+A call for viewshed ecology: Advancing our understanding of the ecology of information through viewshed analysis,10.1111/2041-210X.12902,R
+Assessing the joint behaviour of species traits as filtered by environment,10.1111/2041-210X.12901,R
+Improved demethylation in ecological epigenetic experiments: Testing a simple and harmless foliar demethylation application,10.1111/2041-210X.12903,R
+A method for analysing small samples of floral pollen for free and protein-bound amino acids,10.1111/2041-210X.12867,SPSS
+Using terrestrial laser scanning data to estimate large tropical trees biomass and calibrate allometric models: A comparison with traditional destructive approach,10.1111/2041-210X.12933,R
+A phylogenetically controlled meta-analysis of biologging device effects on birds: Deleterious effects and a call for more standardized reporting of study data,10.1111/2041-210X.12934,R
+How to incorporate information on propagule pressure in the analysis of alien establishment success,10.1111/2041-210X.12930,R
+An efficient method to exploit LiDAR data in animal ecology,10.1111/2041-210X.12921,R
+An a posteriori species clustering for quantifying the effects of species interactions on ecosystem functioning,10.1111/2041-210X.12920,R
+Estimating dispersal kernels using genetic parentage data,10.1111/2041-210X.12922,MATLAB
+Correction for bias in meta-analysis of little-replicated studies,10.1111/2041-210X.12927,R
+ecolottery: Simulating and assessing community assembly with environmental filtering and neutral dynamics in R,10.1111/2041-210X.12918,R
+Modelling the area of occupancy of habitat types with remote sensing,10.1111/2041-210X.12925,MAXENT
+Predicting animal behaviour using deep learning: GPS data alone accurately predict diving in seabirds,10.1111/2041-210X.12926,R
+An open-population distance sampling framework for assessing population dynamics in group-dwelling species,10.1111/2041-210X.12932,R
+Analysis of nectar from low-volume flowers: A comparison of collection methods for free amino acids,10.1111/2041-210X.12928,SPSS
+Estimation of above-ground biomass of large tropical trees with terrestrial LiDAR,10.1111/2041-210X.12904,R
+A new framework for analysing automated acoustic species detection data: Occupancy estimation and optimization of recordings post-processing,10.1111/2041-210X.12910,R
+Quantifying the strength of migratory connectivity,10.1111/2041-210X.12916,R
+"Quantitative evolutionary patterns in bipartite networks: Vicariance, phylogenetic tracking or diffuse co-evolution?",10.1111/2041-210X.12914,R
+Unmanned aerial systems measure structural habitat features for wildlife across multiple scales,10.1111/2041-210X.12919,-
+Integrating evolutionary biology with digital arts to quantify ecological constraints on vision-based behaviour,10.1111/2041-210X.12912,-
+An individual-based model of ectotherm movement integrating metabolic and microclimatic constraints,10.1111/2041-210X.12909,R
+Accounting for uncertainty in duplicate identification and group size judgements in mark–recapture distance sampling,10.1111/2041-210X.12895,R
+Quantifying population size of migrant birds at stopover sites: Combining count data with stopover length estimated from stable isotope analysis,10.1111/2041-210X.12913,-
+3D spatial conservation prioritisation: Accounting for depth in marine environments,10.1111/2041-210X.12896,-
+Single-tube library preparation for degraded DNA,10.1111/2041-210X.12871,R
+Individual growth as a non-dietary determinant of the isotopic niche metrics,10.1111/2041-210X.12887,R
+Performance of multistate mark–recapture models for temporary emigration in the presence of survival costs,10.1111/2041-210X.12891,C++
+Rapid organic matter assay of organic matter degradation across depth gradients within marine sediments,10.1111/2041-210X.12894,R
+A non-invasive method for sampling the body odour of mammals,10.1111/2041-210X.12888,R
+Estimating species colonization dates using DNA in lake sediment,10.1111/2041-210X.12890,R
+New approaches for delineating n-dimensional hypervolumes,0.1111/2041-210X.12865,R
+Bringing multivariate support to multiscale codependence analysis: Assessing the drivers of community structure across spatial scales,10.1111/2041-210X.12864,R
+Quantifying and modelling decay in forecast proficiency indicates the limits of transferability in land-cover classification,10.1111/2041-210X.12870,R
+raptr: Representative and adequate prioritization toolkit in R,10.1111/2041-210X.12862,R
+Modelling unbiased dispersal kernels over continuous space by accounting for spatial heterogeneity in marking and observation efforts,10.1111/2041-210X.12872,R
+Imperfect pathogen detection from non-invasive skin swabs biases disease inference,10.1111/2041-210X.12868,R
+Effects of intrinsic sources of spatial autocorrelation on spatial regression modelling,10.1111/2041-210X.12866,R
+A practical guide to structured expert elicitation using the IDEA protocol,10.1111/2041-210X.12857,-
+Estimating genotyping errors from genotype and reconstructed pedigree data,10.1111/2041-210X.12859,Colony
+An efficient extension of N-mixture models for multi-species abundance estimation,10.1111/2041-210X.12856,R
+A crush on small fungi: An efficient and quick method for obtaining DNA from minute ascomycetes,10.1111/2041-210X.12850,-
+Classifying ecosystems with metaproperties from terrestrial laser scanner data,10.1111/2041-210X.12854,-
+A novel protocol for studying bee cognition in the wild,10.1111/2041-210X.12852,R
+Detecting hybridization by likelihood calculation of gene tree extra lineages given explicit models,10.1111/2041-210X.12846,R
+Scrutinizing key steps for reliable metabarcoding of environmental samples,10.1111/2041-210X.12849,-
+Socio-economic impact classification of alien taxa (SEICAT),10.1111/2041-210X.12844,-
+A statistical methodology for estimating assortative mating for phenotypic traits that are labile or measured with error,10.1111/2041-210X.12837,R
+Processing of acceleration and dive data on-board satellite relay tags to investigate diving and foraging behaviour in free-ranging marine predators,10.1111/2041-210X.12845,R
+Quantifying apart what belongs together: A multi-state species distribution modelling framework for species using distinct habitats,10.1111/2041-210X.12847,R
+Incremental analysis of vertebral centra can reconstruct the stable isotope chronology of teleost fishes,10.1111/2041-210X.12834,-
+Estimates of observer expertise improve species distributions from citizen science data,10.1111/2041-210X.12838,R
+How to quantify a distance-dependent landscape effect on a biological response,10.1111/2041-210X.12830,R
+Using data from related species to overcome spatial sampling bias and associated limitations in ecological niche modelling,10.1111/2041-210X.12832,MAXENT
+Distinguishing distribution dynamics from temporary emigration using dynamic occupancy models,10.1111/2041-210X.12840,R
+Occupancy surveys with conditional replicates: An alternative sampling design for rare species,10.1111/2041-210X.12842,R
+An active-radio-frequency-identification system capable of identifying co-locations and social-structure: Validation with a wild free-ranging animal,10.1111/2041-210X.12839,R
+Unmanned aircraft system advances health mapping of fragile polar vegetation,10.1111/2041-210X.12833,C++
+Long-range PCR allows sequencing of mitochondrial genomes from environmental DNA,10.1111/2041-210X.12836,-
+Contribution of spatial heterogeneity in effective population sizes to the variance in pairwise measures of genetic differentiation,10.1111/2041-210X.12820,R
+Statistical design and analysis for plant cover studies with multiple sources of observation errors,10.1111/2041-210X.12825,R
+Long-term video surveillance and automated analyses reveal arousal patterns in groups of hibernating bats,10.1111/2041-210X.12823,R
+Using taxonomic consistency with semi-automated data pre-processing for high quality DNA barcodes,10.1111/2041-210X.12824,R
+Inter-laboratory variation in corticosterone measurement: Implications for comparative ecological and evolutionary studies,10.1111/2041-210X.12821,R
+An equation-free method reveals the ecological interaction networks within complex microbial ecosystems,10.1111/2041-210X.12814,Mathematica
+On which targets should we compromise in conservation prioritization problems?,10.1111/2041-210X.12812,R
+Bias correction of bounded location errors in presence-only data,10.1111/2041-210X.12793,R
+Estimating occupancy and abundance using aerial images with imperfect detection,10.1111/2041-210X.12815,R
+Dissimilarity-overlap analysis of community dynamics: Opportunities and pitfalls,10.1111/2041-210X.12809,-
+Spatio-temporal connectivity: assessing the amount of reachable habitat in dynamic landscapes,10.1111/2041-210X.12799,R
+A generalized definition of reactivity for ecological systems and the problem of transient species dynamics,10.1111/2041-210X.12805,-
+Identifying consistent allele frequency differences in studies of stratified populations,10.1111/2041-210X.12810,R
+An efficient method for sorting and quantifying individual social traits based on group-level behaviour,10.1111/2041-210X.12813,MATLAB
+Attributing changes in the distribution of species abundance to weather variables using the example of British breeding birds,10.1111/2041-210X.12811,R
+Confronting preferential sampling when analysing population distributions: diagnosis and model-based triage,10.1111/2041-210X.12803,R
+A general sampling formula for community structure data,10.1111/2041-210X.12807,R
+Nonlinear partitioning of biodiversity effects on ecosystem functioning,10.1111/2041-210X.12804,-
+Colour patch size and measurement error using reflectance spectrophotometry,10.1111/2041-210X.12801,R
+Composite measures of selection can improve the signal-to-noise ratio in genome scans,10.1111/2041-210X.12774,R
+"Genetic assignment with isotopes and habitat suitability (gaiah), a migratory bird case study",10.1111/2041-210X.12800,R
+"Improving models of urban greenspace: from vegetation surface cover to volumetric survey, using waveform laser scanning",10.1111/2041-210X.12794,C
+A multinomial network method for the analysis of mate choice and assortative mating in spatially structured populations,10.1111/2041-210X.12798,R
+From animal tracks to fine-scale movement modes: a straightforward approach for identifying multiple spatial movement patterns,10.1111/2041-210X.12787,R
+Spatially balanced designs that incorporate legacy sites,10.1111/2041-210X.12782,R
+Assessing strengths and weaknesses of DNA metabarcoding-based macroinvertebrate identification for routine stream monitoring,10.1111/2041-210X.12789,R
+Distance sampling with camera traps,10.1111/2041-210X.12790,R
+Applying the multistate capture–recapture robust design to characterize metapopulation structure,10.1111/2041-210X.12792,MARK
+Modelling the probability of microhabitat formation on trees using cross-sectional data,10.1111/2041-210X.12773,R
+Single-node vs. multi-node centrality in landscape graph analysis: key habitat patches and their protection for 20 bird species in NE Spain,10.1111/2041-210X.12783,R
+‘Size’ and ‘shape’ in the measurement of multivariate proximity,10.1111/2041-210X.12776,R
+Imaging biological surface topography in situ and in vivo,10.1111/2041-210X.12778,-
+"HyRAD-X, a versatile method combining exome capture and RAD sequencing to extract genomic information from ancient DNA",10.1111/2041-210X.12785,R
+A method for the objective selection of landscape-scale study regions and sites at the national level,10.1111/2041-210X.12779,R
+Accuracy and bias of methods used for root length measurements in functional root research,10.1111/2041-210X.12771,R
+Lost in parameter space: a road map for stacks,10.1111/2041-210X.12775,-

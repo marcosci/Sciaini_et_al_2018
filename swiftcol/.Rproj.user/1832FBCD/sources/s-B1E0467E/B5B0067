@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519819829634.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B5B0067",
+    "lastKnownWriteTime" : 1522154664,
+    "last_content_update" : 1522154664362,
+    "path" : "C:/Users/scherer/GoogleDrive/Bio/Projects/2015_BioMove-P02/NLMR/R/parameters.R",
+    "project_path" : "R/parameters.R",
+    "properties" : {
+        "cursorPosition" : "23,11",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523798550960.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4137232095",
+    "id" : "4F2BD700",
+    "lastKnownWriteTime" : 1523798608,
+    "last_content_update" : 1523798608691,
+    "path" : "~/PhD_Cloud/2_Publications/2_NLMR/analysis/NLMR/R/parameters.R",
+    "project_path" : "R/parameters.R",
+    "properties" : {
+        "cursorPosition" : "9,12",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

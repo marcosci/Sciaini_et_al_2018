@@ -1,0 +1,28 @@
+##----------------------------------------------------------------------------------------------------------##
+##  Cedric Scherer (cedricphilippscherer@gmail.com)                                                         ##
+##  Input and output parameters for simulation-fun.R and 1_Simulation.R                                     ##
+##  2017-07-27                                                                                              ##
+##----------------------------------------------------------------------------------------------------------##
+
+
+#### INPUT ---------------------------------------------------------------------------------------------------
+
+### PreSim()
+nl_path <- "C:/Program Files/NetLogo5.3.1/app"
+model_path <- paste0(getwd(), "/Model/SwiFCoIBM_basic.nlogo")  ## NLStart(nl_path) and NLLoadModel(model_path) need absolute paths
+gui <- FALSE
+
+### Sim()
+## variables
+
+## number of replications
+n <- 100  
+
+## landscapes
+nlms <- c(rep('\"homogeneous\"', n), 
+          paste0('\"random_', seq(n), '\"'), 
+          paste0('\"mpd-0.0_', seq(n), '\"'))
+
+## turn on seed for BehaviorSpace
+seed <- '\"BS\"'
+           

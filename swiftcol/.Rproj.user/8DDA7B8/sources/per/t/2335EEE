@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523798306449.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2686189441",
+    "id" : "2335EEE",
+    "lastKnownWriteTime" : 1522951360,
+    "last_content_update" : 1522951360,
+    "path" : "~/PhD_Cloud/2_Publications/2_NLMR/analysis/NLMR/1_Simulation.R",
+    "project_path" : "1_Simulation.R",
+    "properties" : {
+        "cursorPosition" : "65,0",
+        "scrollLine" : "36"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

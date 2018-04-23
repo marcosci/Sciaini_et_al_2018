@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523798318366.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2152951849",
+    "id" : "982F040A",
+    "lastKnownWriteTime" : 1523798362,
+    "last_content_update" : 1523798362984,
+    "path" : "~/PhD_Cloud/2_Publications/2_NLMR/analysis/NLMR/R/nlms.R",
+    "project_path" : "R/nlms.R",
+    "properties" : {
+        "cursorPosition" : "40,0",
+        "scrollLine" : "11"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

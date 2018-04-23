@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519819921264.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4077057869",
+    "id" : "F2544EC5",
+    "lastKnownWriteTime" : 1521456993,
+    "last_content_update" : 1521456993,
+    "path" : "C:/Users/scherer/GoogleDrive/Bio/Projects/2015_BioMove-P02/NLMR/R/simulation-fun.R",
+    "project_path" : "R/simulation-fun.R",
+    "properties" : {
+        "cursorPosition" : "38,26",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

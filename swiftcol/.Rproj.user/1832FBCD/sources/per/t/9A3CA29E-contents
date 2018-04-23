@@ -1,0 +1,133 @@
+##---------------------------------------------------------------------------------------------------------------##
+##  Cedric Scherer (cedricphilippscherer@gmail.com)                                                              ##
+##  Script for analysing simulation results                                                                      ##
+##  2018-02-28                                                                                                   ##
+##---------------------------------------------------------------------------------------------------------------##
+
+#### PACKAGES -----------------------------------------------------------------------------------------------------
+
+library(tidyverse)       ## data wrangling
+library(landscapetools)  ## theme_nlm()
+library(nord)            ## colors
+library(patchwork)       ## combine ggplots
+library(scales)          ## readable axes
+
+
+#### PREPARATION --------------------------------------------------------------------------------------------------
+
+source("./R/parameters.R")
+source("./R/ggtheme.R")
+
+
+#### DATA ---------------------------------------------------------------------------------------------------------
+
+destfile <- "./output/results_100x50.Rds"
+
+if (!file.exists(destfile)) {
+  print("running simulations")
+  source("1_Simulation.R")
+  print("results available")
+} else if (exists("results")) {
+  print("results available")
+} else {
+  print("loading results")
+  results <- readRDS(destfile)
+  print("results available")
+}
+
+rm(destfile)
+
+
+#### CLEANING DATA ------------------------------------------------------------------------------------------------
+
+scen <- nlms %>% 
+  as_tibble() %>% 
+  transmute(Run = 1:n(),
+            Landscape = gsub("[^[a-z]", "", value)) %>%
+  mutate(Landscape = factor(Landscape, levels = c("hom", "fraglow", "fraghigh")))
+
+results_proc <- results %>% 
+  t() %>% 
+  tbl_df() %>% 
+  unnest() %>% 
+  full_join(scen, ., by = "Run") %>% 
+  mutate(Run = factor(Run)) %>% 
+  group_by(Run) %>% 
+  mutate(WeekOutbreak = Weeks - WeekRelease,
+         WeekLast = max(Weeks),
+         IndAll = IndSusc + IndTran + IndLeth + IndImmu,
+         IndInf = IndTran + IndLeth)
+
+
+#### NUMBER OF INFECTED INDIVIDUALS (relative?) --------------------------------------------------------------------
+
+inf <- results_proc %>% 
+  group_by(Landscape) %>% 
+  summarize(sum_inf = sum(IndInf),
+            sum_pop = sum(IndAll)) %>% 
+  mutate(prop_inf = sum_inf / sum_pop)
+
+p_inf <- results_proc %>% 
+  group_by(Run, Landscape) %>%
+  summarize(sum_inf = sum(IndInf)) %>% 
+  #summarize(sum_inf = sum(IndInf) / sum(IndAll)) %>%  ## optional proportion
+  ungroup() %>% 
+  ggplot(aes(Landscape, sum_inf, col = Landscape)) +
+    geom_boxplot(width = 0.75, notch = TRUE, outlier.shape = NA) + 
+    geom_jitter(width = 0.25, alpha = 0.25) +
+    labs(x = "Landscape type", y = "Number of infected individuals", tag = "A") + 
+    theme_nlm_discrete(legend.position = "none", axis_title_size = 13, axis_title_just = 0.5, 
+                       axis_text_size = 11) +
+    scale_color_nord("victory_bonds", discrete = T) +
+    scale_x_discrete(limit = c("hom", "fraglow", "fraghigh"),
+                     labels = c("homogeneous","low\nfragmentation","high\nfragmentation")) +
+    scale_y_continuous(labels = scales::comma, breaks = seq(0, 1250000, by = 250000))
+
+
+#### PROBABILITY OF PERSISTENCE -----------------------------------------------------------------------------------
+
+pers_year <- map_df((1:50) * 52, ~results_proc %>% 
+                   filter(WeekOutbreak == .x) %>% 
+                   group_by(Landscape) %>% 
+                   summarise(prob = n() / n,
+                             year = .x / 52))
+
+## add zero probability to final year (if belowmaximum simulation time of 50 years)
+last <- pers_year %>% 
+  group_by(Landscape) %>% 
+  summarize(last = max(year)) %>% 
+  filter(last < 50)
+
+pers_year <- add_row(pers_year, Landscape = pull(last[1]), prob = 0, year = pull(last[2])) %>% 
+  arrange(Landscape, year)
+
+p_pers <- ggplot(pers_year, aes(year, prob, col = Landscape)) + 
+  geom_line(size = 1) + 
+  ylim(0, 1) +
+  scale_x_continuous(breaks = seq(0, 50, 5)) + 
+  scale_color_nord("victory_bonds", discrete = T, name = "Landscape type: ", 
+                   labels = c("homogeneous", "low fragmentation", "high fragmentation")) +
+  labs(x = "Years since outbreak", y = "Probability of persistence", tag = "B") +
+  theme_nlm(legend.position = "right", legend_text_size = 11, legend_title_size = 11,
+            axis_title_size = 13, axis_title_just = 0.5, axis_text_size = 11, panel.grid.minor = element_blank())
+
+
+#### FINAL PLOT ----------------------------------------------------------------------------------------------------
+
+p <- p_inf + p_pers 
+
+ggsave("./plots/plots.png", p, width = 10, height = 4, dpi = 750)
+
+
+#### STATS FOR MANUSCRIPT ------------------------------------------------------------------------------------------
+
+## check max number of infected
+results_proc %>% 
+  group_by(Run, Landscape) %>%
+  summarize(sum_inf = sum(IndInf)) %>% 
+  group_by(Landscape) %>% 
+  summarize(max = max(sum_inf)) %>% 
+  summarize(rel = max(max) / first(max))
+
+pers_year %>% filter(year == 1)
+

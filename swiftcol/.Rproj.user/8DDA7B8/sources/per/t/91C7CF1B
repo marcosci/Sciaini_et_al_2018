@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1523798549981.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4077057869",
+    "id" : "91C7CF1B",
+    "lastKnownWriteTime" : 1522951360,
+    "last_content_update" : 1522951360,
+    "path" : "~/PhD_Cloud/2_Publications/2_NLMR/analysis/NLMR/R/simulation-fun.R",
+    "project_path" : "R/simulation-fun.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

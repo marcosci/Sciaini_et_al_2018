@@ -3,9 +3,9 @@ This repository is designed to store scripts and additional analyses that are li
 ### NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R
 
 The repository contains the following files:
-- `/Figures`
+- `/figures`
     - Folder containing an R script to reproduce all the figures in the manuscript
- - `/scwiftcol`
+ - `/swiftcol`
     - Folder containing an R script to rerun Use Case 1 in the manuscript
  - `/upscaling`
     - Folder containing an R script to rerun Use Case 2 in the manuscript

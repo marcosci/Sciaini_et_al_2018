@@ -1,6 +1,0 @@
-library(nlmr); library(landscapetools)
-
-nlm <- nlm_fbm(ncol = 200, nrow = 200, fract_dim = 0.9)
-nlm <- util_classify(nlm, c(0.3, rep(0.1, 7)))
-util_plot(nlm) + scale_fill_brewer(palette = "ag_GrnYl", direction = -1)
-                     

@@ -176,31 +176,31 @@ ggsave(plot = p, "swiftcol.eps", height = 4, width = 12, device=cairo_ps)
 ### FIG 4 ----
 
 # land example landscapes
-mapex <- readRDS('map_example.RDS')
-
-names(mapex) <- c("25, unscaled",
-                  "50",
-                  "100",
-                  "200",
-                  "400",
-                  "800",
-                  "25, unscaled",
-                  "50",
-                  "100",
-                  "200",
-                  "400",
-                  "800")
+mapex <- readRDS('figures/map_example.RDS')
+saveRDS(mapex, "figures/map_example.RDS")
+names(mapex) <- c("1, unscaled",
+                  "2",
+                  "4",
+                  "8",
+                  "16",
+                  "32",
+                  "1, unscaled",
+                  "2",
+                  "4",
+                  "8",
+                  "16",
+                  "32")
 
 maptibb <- tibble::enframe(mapex, "id", "maps") %>% dplyr::mutate(maps = purrr::map(.$maps, 
                                                                                     util_raster2tibble)) %>% tidyr::unnest()
 
 
-maptibb$id <- factor(maptibb$id, levels = c("25, unscaled",
-                                            "50",
-                                            "100",
-                                            "200",
-                                            "400",
-                                            "800"))
+maptibb$id <- factor(maptibb$id, levels = c("1, unscaled",
+                                            "2",
+                                            "4",
+                                            "8",
+                                            "16",
+                                            "32"))
 
 
 maptibb$id2 <- NA
@@ -221,18 +221,18 @@ plt <- ggplot2::ggplot(maptibb, ggplot2::aes_string("x", "y")) +
     scale_fill_gradientn(colours=pals::parula(100))+ 
     ggplot2::theme(strip.text = ggplot2::element_text(size = 18))
 
-ggsave(plot = plt, "scaling.eps", height = 12, width = 4, device=cairo_ps)
+ggsave(plot = plt, "figures/scaling.eps", height = 12, width = 4, device=cairo_ps)
 
 ### FIG 5 ----
-stats <- readRDS('stats.RDS')
+stats <- readRDS('figures/stats.RDS')
 stats$scm[stats$scm == "average_rule"] <- "Average Rule"
 stats$scm[stats$scm == "majority_rule"] <- "Majority Rule"
 
-plt2 <- ggplot(stats, aes(agf*25, pinc, colour = as.character(H))) +
+plt2 <- ggplot(stats, aes(agf, pinc, colour = as.character(H))) +
     geom_jitter(alpha = 1/3, shape = 20) +
     stat_summary(fun.y = mean, geom = 'line', aes(group=factor(H))) +
     facet_grid(scm~p, scales = "free_y", labeller = label_value) +
-    labs(x = 'Landscape resolution [m]', y = 'Suitable cells increment [%]', colour = 'H') + 
+    labs(y = 'Habitat cells increment [%]', colour = 'Roughness') + 
     scale_color_manual(values = c("#E69F00", "#56B4E9", "#009E73")) +
     theme_grey(base_size = 18) +
     theme(strip.background = ggplot2::element_rect(fill = "grey80"),
@@ -244,14 +244,14 @@ plt2 <- ggplot(stats, aes(agf*25, pinc, colour = as.character(H))) +
           axis.text.x = element_text(angle=90, 
                                      size = 10,
                                      vjust= 0.5)) + 
-    scale_x_continuous('Landscape resolution [m]',
-                       breaks = c(25, 50, 100, 200, 400, 800),
-                       labels = c(25, 50, 100, 200, 400, 800),
-                       limits = c(25, 800))
+    scale_x_continuous('Landscape resolution [map units]',
+                       breaks = c(1, 2, 4, 8, 16, 32),
+                       labels = c(1, 2, 4, 8, 16, 32),
+                       limits = c(1, 32))
 
 
 # ggsave("suitable_cells.eps", height = 4, width = 12, device=cairo_ps, fallback_resolution = 600)
-ggsave(plot = plt2, "suitable_cells.eps", height = 4, width = 12, device=cairo_ps)
+ggsave(plot = plt2, "figures/suitable_cells.eps", height = 4, width = 12, device=cairo_ps)
 
 
 ## FIG 6 ----

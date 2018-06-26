@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/130709876.svg)](https://zenodo.org/badge/latestdoi/130709876)
+
 This repository is designed to store scripts for figures and case studies that are linked to the NLMR and landscapetools paper Sciaini et al. 2018:
 
 

@@ -1,4 +1,4 @@
-# required packages and own sourced stuff
+# required packages
 
 library(NLMR)
 library(landscapetools)

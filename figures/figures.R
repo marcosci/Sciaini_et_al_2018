@@ -4,7 +4,9 @@ library(landscapetools)
 library(tidyverse)
 library(magrittr)
 library(patchwork)       
-library(scales)          
+library(scales)       
+library(pals)       
+library(readr)          
 
 ### FIG 1 ----
 #### create landscapes ----
@@ -255,14 +257,16 @@ ggsave(plot = plt2, "figures/suitable_cells.eps", height = 4, width = 12, device
 
 
 ## FIG 6 ----
-mee_softwareusage <- read_csv("../mee_softwareusage.csv")
+mee_softwareusage <- read_csv("mee_softwareusage.csv")
 
 mee_softwareusage %<>%
     mutate(Software=replace(Software, Software == "-", NA)) 
 
-mee_softwareusage$Software <- factor(mee_softwareusage$Software, levels = c("R", "NA", "C++", "SPSS",
-                                                                            "MATLAB", "MAXENT", "C",
-                                                                            "Colony", "MARK", "Mathematica"
+mee_softwareusage$Software <- factor(mee_softwareusage$Software, levels = c("R", "MATLAB", "NA", "C++", "SPSS",
+                                                                            "MAXENT", "Python", "C",
+                                                                            "Colony", "MARK", "Mathematica",
+                                                                            "SPOT", "pinpoint", "Genstat",
+                                                                            "JAVA", "STSim"
 ))
 
 

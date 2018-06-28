@@ -8,7 +8,7 @@ This repository is designed to store scripts for figures and case studies that a
 The repository contains the following files:
 - `/figures`
     - Folder containing an R script to reproduce all the figures in the manuscript
- - `/swifcol`
+ - `/swiftcol`
     - Folder containing an R script to rerun Case Study 1 in the manuscript
  - `/upscaling`
     - Folder containing an R script to rerun Case Study 2 in the manuscript

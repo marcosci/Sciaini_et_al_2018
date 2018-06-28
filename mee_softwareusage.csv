@@ -1,8 +1,7 @@
 Title,DOI,Software
-,,
 An open-source sensor-logger for recording vertical movement in free-living organisms,10.1111/2041-210X.12893,-
 Testing determinants of the annual individual fitness: An overall mean mixture model for de-lifing data,10.1111/2041-210X.12908,R
-A simplified mark�release�recapture protocol to improve the cost effectiveness of repeated population size quantification,10.1111/2041-210X.12900,-
+A simplified mark�release�recapture protocol to improve the cost effectiveness of repeated population size quantification,10.1111/2041-210X.12900,-
 In situ measurements of animal morphological features: A non-invasive method,10.1111/2041-210X.12898,R
 A call for viewshed ecology: Advancing our understanding of the ecology of information through viewshed analysis,10.1111/2041-210X.12902,R
 Assessing the joint behaviour of species traits as filtered by environment,10.1111/2041-210X.12901,R
@@ -27,12 +26,12 @@ Quantifying the strength of migratory connectivity,10.1111/2041-210X.12916,R
 Unmanned aerial systems measure structural habitat features for wildlife across multiple scales,10.1111/2041-210X.12919,-
 Integrating evolutionary biology with digital arts to quantify ecological constraints on vision-based behaviour,10.1111/2041-210X.12912,-
 An individual-based model of ectotherm movement integrating metabolic and microclimatic constraints,10.1111/2041-210X.12909,R
-Accounting for uncertainty in duplicate identification and group size judgements in mark�recapture distance sampling,10.1111/2041-210X.12895,R
+Accounting for uncertainty in duplicate identification and group size judgements in mark�recapture distance sampling,10.1111/2041-210X.12895,R
 Quantifying population size of migrant birds at stopover sites: Combining count data with stopover length estimated from stable isotope analysis,10.1111/2041-210X.12913,-
 3D spatial conservation prioritisation: Accounting for depth in marine environments,10.1111/2041-210X.12896,-
 Single-tube library preparation for degraded DNA,10.1111/2041-210X.12871,R
 Individual growth as a non-dietary determinant of the isotopic niche metrics,10.1111/2041-210X.12887,R
-Performance of multistate mark�recapture models for temporary emigration in the presence of survival costs,10.1111/2041-210X.12891,C++
+Performance of multistate mark�recapture models for temporary emigration in the presence of survival costs,10.1111/2041-210X.12891,C++
 Rapid organic matter assay of organic matter degradation across depth gradients within marine sediments,10.1111/2041-210X.12894,R
 A non-invasive method for sampling the body odour of mammals,10.1111/2041-210X.12888,R
 Estimating species colonization dates using DNA in lake sediment,10.1111/2041-210X.12890,R
@@ -91,12 +90,60 @@ From animal tracks to fine-scale movement modes: a straightforward approach for 
 Spatially balanced designs that incorporate legacy sites,10.1111/2041-210X.12782,R
 Assessing strengths and weaknesses of DNA metabarcoding-based macroinvertebrate identification for routine stream monitoring,10.1111/2041-210X.12789,R
 Distance sampling with camera traps,10.1111/2041-210X.12790,R
-Applying the multistate capture�recapture robust design to characterize metapopulation structure,10.1111/2041-210X.12792,MARK
+Applying the multistate capture�recapture robust design to characterize metapopulation structure,10.1111/2041-210X.12792,MARK
 Modelling the probability of microhabitat formation on trees using cross-sectional data,10.1111/2041-210X.12773,R
 Single-node vs. multi-node centrality in landscape graph analysis: key habitat patches and their protection for 20 bird species in NE Spain,10.1111/2041-210X.12783,R
-�Size� and �shape� in the measurement of multivariate proximity,10.1111/2041-210X.12776,R
+�Size� and �shape� in the measurement of multivariate proximity,10.1111/2041-210X.12776,R
 Imaging biological surface topography in situ and in vivo,10.1111/2041-210X.12778,-
-"HyRAD-X, a versatile method combining exome capture and RAD sequencing to extract genomic information from ancient DNA",10.1111/2041-210X.12785,R
+Field methods for sampling tree height for tropical forest biomass estimation,10.1111/2041-210X.12785,R
 A method for the objective selection of landscape-scale study regions and sites at the national level,10.1111/2041-210X.12779,R
 Accuracy and bias of methods used for root length measurements in functional root research,10.1111/2041-210X.12771,R
 Lost in parameter space: a road map for stacks,10.1111/2041-210X.12775,-
+Uncertainty in geographical estimates of performance and fitness,10.1111/2041-210X.13035,R
+Landscape history confounds the ability of the NDVI to detect fine‐scale variation in grassland communities ,10.1111/2041-210X.13036,R
+Fitting functional responses: Direct parameter estimation by simulating differential equations ,10.1111/2041-210X.13039,R
+How to best threshold and validate stacked species assemblages? Community optimisation might hold the answer ,10.1111/2041-210X.13041,R
+Active learning for classifying long‐duration audio recordings of the environment ,10.1111/2041-210X.13042 ,JAVA
+Using partial aggregation in spatial capture recapture ,10.1111/2041-210X.13030,R
+"Quantifying the value of monitoring species in multi‐species, multi‐threat systems ",10.1111/2041-210X.13037,MATLAB
+A cost‐and‐time effective procedure to develop SNP markers for multiple species: a support for community genetics,10.1111/2041-210X.13034,Python
+Statistical inference for home range overlap ,10.1111/2041-210X.13027,R
+How do MAR(1) models cope with hidden nonlinearities in ecological dynamics? ,10.1111/2041-210X.13021,R
+Estimating bird detection distances in sound recordings for standardising detection ranges and distance sampling ,10.1111/2041-210X.13031,R
+Animal movement models for migratory individuals and groups ,10.1111/2041-210X.13016,R
+Quantifying camouflage and conspicuousness using visual salience ,10.1111/2041-210X.13019,MATLAB
+Can opportunistically collected Citizen Science data fill a data gap for habitat suitability models of less common species? ,10.1111/2041-210X.13012,R
+Scaling up effects of measures mitigating pollinator loss from local‐ to landscape‐level population responses,10.1111/2041-210X.13017 ,Genstat
+Effects of spatial autocorrelation and imperfect detection on species distribution models ,10.1111/2041-210X.12983,R
+Fuzzy ecospace modelling ,10.1111/2041-210X.13010,R
+Accounting for differences in species frequency distributions when calculating beta diversity in the fossil record ,10.1111/2041-210X.13007 ,R
+Habitat structure modifies microclimate: An approach for mapping fine‐scale thermal refuge ,10.1111/2041-210X.13008,R
+The structured demography of open populations in fluctuating environments ,10.1111/2041-210X.12991,R
+A global envelope test to detect non‐random bursts of trait evolution ,10.1111/2041-210X.13006,R
+Using balanced acceptance sampling as a master sample for environmental surveys ,10.1111/2041-210X.13003,R
+An automated barcode tracking system for behavioural studies in birds ,10.1111/2041-210X.13005,pinpoint
+Integrating abundance and diet data to improve inferences of food web dynamics,10.1111/2041-210X.13001,R
+"Automatic specimen identification of Harpacticoids (Crustacea:Copepoda) using Random Forest and MALDI‐TOF mass spectra, including a post hoc test for false positive discovery ",10.1111/2041-210X.13000 ,R
+Integrating auxiliary data in optimal spatial design for species distribution modelling ,10.1111/2041-210X.13002,R
+How should we estimate diversity in the fossil record? Testing richness estimators using sampling‐standardised discovery curves ,10.1111/2041-210X.12987 ,R
+Combining network theory and reaction–advection–diffusion modelling for predicting animal distribution in dynamic environments ,10.1111/2041-210X.12997,MATLAB
+Two‐species occupancy modelling accounting for species misidentification and non‐detection ,10.1111/2041-210X.12985 R,
+A computational‐experimental framework for mapping plant coexistence ,10.1111/2041-210X.12981,R
+The influence of non‐random species sampling on macroevolutionary and macroecological inference from phylogenies ,10.1111/2041-210X.12982,R
+Kriging models for linear networks and non‐Euclidean distances: Cautions and solutions ,10.1111/2041-210X.12979,R
+Incorporating measurement error in testing for changes in biodiversity,10.1111/2041-210X.12976,R
+"Net displacement and temporal scaling: Model fitting, interpretation and implementation",10.1111/2041-210X.12978,R
+"Comparing evolutionary rates between trees, clades and traits ",10.1111/2041-210X.12977,R
+Field methods for sampling tree height for tropical forest biomass estimation ,10.1111/2041-210X.12962,R
+A remote‐controlled observatory for behavioural and ecological research: A case study on emperor penguins ,10.1111/2041-210X.12971 ,SPOT
+Modelling mobile agent‐based ecosystem services using kernel‐weighted predictors ,10.1111/2041-210X.12972,R
+Drones count wildlife more accurately and precisely than humans,10.1111/2041-210X.12974 ,R
+Analysis of haplotype networks: The randomized minimum spanning tree method ,10.1111/2041-210X.12969 ,R
+Community level lipid profiling of consumers as a tool for soil food web diagnostics,10.1111/2041-210X.12966,R
+Estimating animal utilization densities using continuous‐time Markov chain models ,10.1111/2041-210X.12967,R
+A fast likelihood solution to the genetic clustering problem ,10.1111/2041-210X.12968 ,R
+Markov‐modulated Poisson processes as a new framework for analysing capture–recapture data ,10.1111/2041-210X.12961,R
+Assessing the dynamics of natural populations by fitting individual‐based models with approximate Bayesian computation ,10.1111/2041-210X.12964,MATLAB
+Integrating continuous stocks and flows into state‐and‐transition simulation models of landscape change ,10.1111/2041-210X.12952 ,STSim
+Avoiding quantification bias in metabarcoding: Application of a cell biovolume correction factor in diatom molecular biomonitoring ,10.1111/2041-210X.12960,R
+Recursive multi‐frequency segmentation of movement trajectories (ReMuS) ,10.1111/2041-210X.12958,Python
